@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{parskip}
+
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage{xcolor}
+\usepackage{quiver}
+
+% colors
+\definecolor{darkblue}{RGB}{37, 99, 235} % Darker blue
+\definecolor{darkgreen}{RGB}{5, 150, 105} % Darker green
+\definecolor{darkred}{RGB}{220, 38, 38} % Darker red
+
+% Define the definition environment
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{example}[definition]{Example}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{exercise}[definition]{Exercise}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{problem}[definition]{problem}
+
+\setlength{\parindent}{0pt}
+
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float}
+
+\pgfplotsset{compat=1.18}  % Set compatibility level for pgfplots
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{bib.bib}
+
+\title{\textcolor{darkblue}{Enumerative Geometry} of \textcolor{darkgreen}{Quiver Representations} and \textcolor{darkred}{Quantum Groups}}
+\author{Gary Hu}
+\date{Fall 2024}
+
+\begin{document}
+
+\maketitle
+\input{abstract}
+
+\tableofcontents
+\input{1}
+
+\printbibliography
+
+\end{document}
